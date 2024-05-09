@@ -1,6 +1,6 @@
 
 
-export const STAKE_DATA = [
+ export const STAKE_DATA = [
   {
     id: 1,
     name: "Pranjal",
