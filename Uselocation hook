@@ -1,0 +1,20 @@
+Uselocation hook will be used in such case : 
+
+
+1 . You want to change password for a user in create new password organism but in create new password organism you do not have option to pass email to the axios to fetch the user and change his password
+because in create new password you do not have state for email 
+so in this case you will use uselocation hook to track the state of email for the particulatr URL
+
+
+const location = useLocation();
+const email = location.state?.email;
+Here, you're accessing the state property of the location object to get the email value. It's common to use the useLocation() hook when you need to access information about the current URL or when you want to pass state between different routes/components. In this case, it seems like you're using it to extract the email from the state, presumably set by a previous navigation.
+
+to access this "const email = location.state?.email;" u have to pass email as state when you are navigating to anoither component
+
+like this
+
+navigate(NAVIGATE_CREATEPASSWORD,{ state: { email: email } });
+
+
+

@@ -1,0 +1,24 @@
+ 
+ 
+ 
+ 
+ JAVASCRIPT
+ 
+ 
+ JavaScript and many programming languages, an arrow function is a concise way to define functions. Both () => {} and () => () are arrow functions, but they have different return values.
+
+() => {}: This arrow function has an empty block, so it does not return anything explicitly. When you call this function, it will not return a value, and its return value will be undefined.
+Example:
+
+javascript
+Copy code
+const func1 = () => {};
+console.log(func1()); // Output: undefined
+() => (): This arrow function also has an empty block, but it returns another arrow function with an empty block. So, when you call this function, it will return the inner arrow function, and its return value will also be undefined.
+Example:
+
+javascript
+Copy code
+const func2 = () => ();
+console.log(func2()); // Output: undefined
+In both cases, the returned value is undefined. However, () => {} is a standalone arrow function with an empty block, while () => () returns another arrow function with an empty block. The difference in usage lies in the purpose of the returned value, but in practice, these two forms are not commonly used as they do not provide meaningful functionality.
